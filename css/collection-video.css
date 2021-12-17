@@ -1,0 +1,46 @@
+
+.collection-player{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.collection-player__video{
+  position: relative;
+  z-index: 1;
+  transform: scale(1.5);
+}
+.collection-player .container{
+  position: absolute;
+  bottom: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3%;
+}
+.collection-player__title{
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.collection-player__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 250px;
+  width: 100%;
+  font-weight: 800;
+  font-size: .7rem;
+  text-transform: uppercase;
+  padding: 20px;
+  background: white;
+  color: black;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.collection-player__button:hover{
+  opacity: .8;
+}
