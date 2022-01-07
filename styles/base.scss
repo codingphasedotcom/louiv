@@ -1,0 +1,41 @@
+
+// variables
+:root{
+  --body-bg: #f7f9fd;
+  --announce-bar-default: #605e7d;
+}
+body{
+  background-color: var(--body-bg);
+}
+a{
+  &:hover{
+    color: rgb(248, 76, 76);
+  }
+}
+
+.fixed-nav{
+  &.transparent-nav{
+    .header{
+      background: transparent;
+      a {
+        color: white;
+      }
+      .header1__collection-link, .header2__collection-link, .header3__collection-link{
+        .collection-link__sub-links{
+          a {
+            color: black;
+            &:hover{
+              color: red;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  .header{
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+}
